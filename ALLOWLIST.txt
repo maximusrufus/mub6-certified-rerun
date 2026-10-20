@@ -1,3 +1,4 @@
+.gitattributes
 .gitignore
 ALLOWLIST.txt
 LICENSE
