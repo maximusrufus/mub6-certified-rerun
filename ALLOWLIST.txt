@@ -1,5 +1,6 @@
 .gitattributes
 .gitignore
+ALLOWLIST.txt
 LICENSE
 LICENSE-DATA
 README.md
