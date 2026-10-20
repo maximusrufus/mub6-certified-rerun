@@ -136,3 +136,6 @@ tool, format or verification failure. It writes a SHA-256 manifest of every inpu
 
 Code: MIT (`LICENSE`). Data (certificates, seed file, manifests, pre-registration files, root table): CC0 1.0
 (`LICENSE-DATA`).
+
+## Lean (first formally verified component)
+`lean/Mub/BoxBound.lean` (Lean 4 + Mathlib, pinned in `lean/lake-manifest.json`) proves the soundness of the seed-cover box test: `box_bound_sound` (for q within half a bin of u, N²‖q−u'‖² ≤ ‖k‖² + Σ|k_j| + 9/4) and `boxCert_sound` (the exact integer test in `coverage/` implies ‖q−u'‖² < 0.032² at N = 112). Build with `cd lean && lake exe cache get && lake build`. `#print axioms` shows only propext, Classical.choice and Quot.sound. The normal-form reduction and the search itself are not formalized.

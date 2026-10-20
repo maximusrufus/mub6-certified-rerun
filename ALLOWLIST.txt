@@ -293,3 +293,9 @@ preregistration/PREREGISTRATION.sha256
 preregistration/PREREGISTRATION.tsq
 preregistration/PREREGISTRATION.tsr
 smoke.sh
+lean/.gitignore
+lean/Mub.lean
+lean/Mub/BoxBound.lean
+lean/lake-manifest.json
+lean/lakefile.toml
+lean/lean-toolchain
