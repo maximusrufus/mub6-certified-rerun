@@ -1,0 +1,6 @@
+arun: startup selftest ok (rounding + interval constants)
+serial atlas merge time 15629.86s of 31008.23s
+local record radii: <.02 2062  <.04 0  <.06 2481  <.08 193335  <.1 3332320  >=.1 2993408
+cpu-seconds: norm 36620.2 dir 121854.6 cover 62340.4 (of which root builds 35555.4)
+sampled 72265439 excluded cells (1/100) -> <work>/excl_sample.txt
+seeds 249976  local-records 6523606 merged-into-existing 6522440  final-records 1166  bad 0  unresolved 0  cells 7726523584 norm-excl 6580621181 dir-excl 645859840 covered 145122551  wall 31008.23s (124.04s / 1000 seeds, 16 threads)

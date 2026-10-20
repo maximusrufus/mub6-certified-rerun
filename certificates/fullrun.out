@@ -1,0 +1,34 @@
+[time] build: 0.3 s (cumulative 0.3 s)
+== seed (regenerated, interval build)
+seed: startup selftest ok (rounding + interval constants)
+seed provenance: 249976 centres, sha256 22cd76ed4e211e842cbf03530ed46fba3416fb9f704f0342d020d4e838d46311, identical to committed seed/seeds.txt: yes
+[time] seed regeneration: 175.3 s (cumulative 175.6 s)
+== seeds used: 249976 lines (stride 1)
+== Stage A (IV_CHECK_ROUNDING build, S6 sampling 1/100 of excluded cells)
+arun: startup selftest ok (rounding + interval constants)
+seeds 249976  local-records 6523606 merged-into-existing 6522440  final-records 1166  bad 0  unresolved 0  cells 7726523584 norm-excl 6580621181 dir-excl 645859840 covered 145122551  wall 31008.23s (1
+[time] stage A: 31698.8 s (cumulative 31874.4 s)
+== S5 re-certification of Stage A records
+  1166 records, 0 failed ALL OK 
+summary: 40 records sampled, 40 exact-solution normal checks, 0 failures
+handoff A->B: 1166 records, 0 violations
+[time] S5 + hand-off: 2.7 s (cumulative 31877.1 s)
+== S6 excluded-cell sample re-verification (python-flint)
+S6: sampled cells checked: 72265439 (norm 65808869, directional 6456570) over 249976 seeds
+S6: disagreements: 0
+[time] S6: 2295.5 s (cumulative 34172.6 s)
+== Stage B + C
+== Stage B mid (tau=.07 w=.013)
+== Stage B fine (tau=.016 w=.005), batches
+   61 batches, 15595 roots (marker)
+== Stage C initial (one process per batch)
+   batches with unresolved records: 5
+== Stage B fallback (tau=.011 w=.0038) on the C failures (C-locale filename order)
+== Stage C final (4 shards)
+RESULT: 0 unresolved
+[time] stage B/C round 1 (rc=0): 10531.0 s (cumulative 44703.6 s)
+[time] fallback loop (1 round(s)): 0.0 s (cumulative 44703.6 s)
+S5 pipeline_check: pipeline structure: 61 batches, 15595 roots, 0 failures
+manifest: <pipeline>/MANIFEST.txt (143 hashes)
+0 unresolved
+rc=0

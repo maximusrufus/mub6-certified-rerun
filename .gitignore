@@ -1,0 +1,14 @@
+# build products and run directories (everything regenerable)
+build/
+bin/
+impl/pipeline/work*/
+impl/pipeline/MANIFEST.txt
+impl/seed/seed
+impl/seed/tests/test_arith
+impl/seed/tests/test_cover
+impl/seed/tests/test_normal
+impl/seed/seeds_gen.txt
+coverage/covcheck
+coverage/*.o
+__pycache__/
+*.pyc

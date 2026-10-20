@@ -1,0 +1,13 @@
+CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+
+This dedication applies to the DATA in this repository: everything under
+certificates/, impl/seed/seeds.txt, impl/stageA/tests/sample_seeds.txt,
+coverage/roots_112.hpp, coverage/COVERAGE_RUN.out, coverage/NEGATIVE_CONTROL.out,
+the hash manifests, and the pre-registration files under preregistration/.
+The code is licensed separately under the MIT License (see LICENSE).
+
+To the extent possible under law, the author has waived all copyright and
+related or neighboring rights to this data. This work is published from the
+United States.
+
+Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode

@@ -1,0 +1,11 @@
+centres 124988
+x-lists 300
+pairs sumok-only 4734946
+pairs +gap2 298321
+pairs +extend 253299
+covered by own centre 515
+covered by box bound 133720
+covered by dual bound 116044
+uncovered 3020
+COVERAGE-FAILED
+exit=0
