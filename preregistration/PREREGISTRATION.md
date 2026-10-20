@@ -1,6 +1,6 @@
 # Pre-registration (DRAFT): independent certified re-implementation of N(6) = 3
 
-[Line 3 of the original names the author's internal registration tooling and change-log convention; it is redacted here. The sha256 and the RFC 3161 token below cover the unredacted original.]
+Draft written 2026-10-19 by research-dc, before any search code has run. The founder registers it, using CommitmentNotary register plus a freetsa anchor. This text is frozen at registration; any later change goes in PREREG_AMENDMENTS.md with a timestamp.
 
 ## Target claim
 openai/math family 266, "The maximum number of mutually unbiased bases in dimension six" (2026-09-24), Theorem 1.1: there are no four pairwise mutually unbiased orthonormal bases in C^6, so N(6) = 3. The original certificate is one recorded binary64 execution of an unreleased pipeline (MUB_ASSESS.md).
@@ -15,7 +15,7 @@ openai/math family 266, "The maximum number of mutually unbiased bases in dimens
    - **SPEC-GAP:** the paper's text is insufficient to define a step (an AMBIGUOUS item in SPEC.md that cannot be resolved from the paper or standard results). We report which step and why.
    - **INCONCLUSIVE:** the cover cannot be completed within the compute budget, or cells remain that neither exclusion nor a certified solution resolves.
 5. Coverage check: the union of seed cells is proven, separately from the search, to cover the normal-form parameter space, including the symmetry reductions as stated and proved in the paper.
-6. Compute budget: at most 72 CPU-hours on this workstation [four words naming a local scheduler convention redacted], and no paid compute. If the budget runs out, the outcome is INCONCLUSIVE with the residual cells reported.
+6. Compute budget: at most 72 CPU-hours on this workstation under a CPU lease, and no paid compute. If the budget runs out, the outcome is INCONCLUSIVE with the residual cells reported.
 
 ## What we will and will not claim
 - REPRODUCED means an independent, rigorous computer-assisted reproduction of the exclusion, under the paper's normal-form reduction. It is not a peer review of that reduction, which we audit separately and report.
