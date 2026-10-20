@@ -15,7 +15,7 @@ openai/math family 266, "The maximum number of mutually unbiased bases in dimens
    - **SPEC-GAP:** the paper's text is insufficient to define a step (an AMBIGUOUS item in SPEC.md that cannot be resolved from the paper or standard results). We report which step and why.
    - **INCONCLUSIVE:** the cover cannot be completed within the compute budget, or cells remain that neither exclusion nor a certified solution resolves.
 5. Coverage check: the union of seed cells is proven, separately from the search, to cover the normal-form parameter space, including the symmetry reductions as stated and proved in the paper.
-6. Compute budget: at most 72 CPU-hours on this workstation under a CPU lease, and no paid compute. If the budget runs out, the outcome is INCONCLUSIVE with the residual cells reported.
+6. Compute budget: at most 72 CPU-hours on this workstation [four words naming a local scheduler convention redacted], and no paid compute. If the budget runs out, the outcome is INCONCLUSIVE with the residual cells reported.
 
 ## What we will and will not claim
 - REPRODUCED means an independent, rigorous computer-assisted reproduction of the exclusion, under the paper's normal-form reduction. It is not a peer review of that reduction, which we audit separately and report.

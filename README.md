@@ -128,9 +128,9 @@ tool, format or verification failure. It writes a SHA-256 manifest of every inpu
   directory is replaced by `<work>` / `<pipeline>`.
 - `coverage/COVERAGE_INPUTS.sha256`: hashes of the seed file and the checker sources at the time of the proof run.
 - `preregistration/`: the pre-registration text, its SHA-256 and the RFC 3161 timestamp (FreeTSA, 2026-10-19
-  22:29:54 GMT; request `.tsq`, response `.tsr`). The text was frozen before any search code ran. One line of the
-  original names the author's internal registration tooling and is redacted in the shipped copy; the hash and the
-  token cover the unredacted original. Verify with
+  22:29:54 GMT; request `.tsq`, response `.tsr`). The text was frozen before any search code ran. Two spots of the
+  original are redacted in the shipped copy (marked in place): one line naming the author's internal registration
+  tooling, and four words naming a local scheduler convention; the hash and the token cover the unredacted original. Verify with
   `openssl ts -verify -in PREREGISTRATION.tsr -queryfile PREREGISTRATION.tsq -CAfile <FreeTSA cacert.pem>`.
 
 ## Licences
