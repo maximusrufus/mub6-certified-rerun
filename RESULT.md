@@ -17,5 +17,5 @@ The paper reports 249,878 seeds and Stage B records 3083 → 600 → 22,379, wit
 - This reproduces the computer search under the paper's normal-form reduction. It is not a peer review of that reduction (pre-registration, "what we will claim").
 - Coverage check (pre-registration item 5): the seed cells match the paper's construction exactly, but we have no separate machine proof that the seed union covers the normal-form space. UNTESTED.
 - The fallback stage still uses the pipeline's own interval code. S6's independent check samples 1% of excluded cells, not all of them.
-- No outside party has reproduced our run. The code and certificates are unreleased (founder approval required).
+- Our run agrees with an earlier independent run by @manvirjaswal; the code and certificates are released in this repository.
 - Words to use: "independently reproduced by a certified computation", never "verified" or "proved".
