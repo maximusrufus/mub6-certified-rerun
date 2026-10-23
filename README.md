@@ -1,5 +1,7 @@
 # Independent certified re-run of the computer search for N(6) = 3
 
+See [AUDIT_REPORT.md](AUDIT_REPORT.md) for a short reproduction report: what was claimed, what the release contains, what this re-run reproduces, and what it does not establish.
+
 This repository is an independent, from-the-text re-implementation and certified re-run of the
 computer-assisted part of
 
