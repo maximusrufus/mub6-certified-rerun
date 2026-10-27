@@ -29,12 +29,13 @@ Yes, as a computation, from the paper text alone (no OpenAI code was used or req
 ## 4. Does the verification establish the full claim?
 
 Only the computation, under the paper's hand-proved normal-form reduction. It does not by itself establish N(6)=3.
-- The reduction lemmas are proved in M. Jaswal's paper v2, Appendix C.2, Lemmas C.4 and C.5 (https://zenodo.org/records/23533384). carsoncrocker has been invited to read them (https://github.com/google-deepmind/formal-conjectures/issues/6918). We have not reviewed them.
+- The reduction lemmas are proved in M. Jaswal's paper v2, Appendix C.2, Lemmas C.4 and C.5 (https://zenodo.org/records/23533384). carsoncrocker read Lemmas C.4 and C.5 against [OAI26b] Lemmas 2.2 and 2.4 (https://github.com/google-deepmind/formal-conjectures/issues/6918#issuecomment-6393755826), then how Section 2.3 and Lemmas C.6 to C.9 use C.5 (#issuecomment-6446010538), and reported no gap in either. Both reads are AI-assisted and by a non-specialist, as stated there; they are not a referee report and do not cover Lemma 3.7 beyond its integer form.
 - Cross-check of Jaswal's published data (Zenodo 10.5281/zenodo.23255817, v1, CC BY 4.0, read as data, none of his code run): all 57,480 stored root records pass our checker (root conditions only): 57,480 in 200-bit python-flint, 0 rejected; 1,718 are valid only in transposed coordinates, covered by his Lemma C.24 (residual equality checked numerically, max relative difference 1.1e-43). 26,677 exact-solution tests, 0 failures. This is not a replay of cell-level exclusions: neither run stores them. The cross-check scripts and outputs are available on request.
 
 ## 5. What could not be established, and why?
 
-- The normal-form reduction is not reviewed by us (hand-proved in the cited lemmas; no formalisation).
+- The normal-form reduction is hand-proved in the cited lemmas and has had the non-specialist reading above. It has no specialist review and no formalisation. Lemma 3.7 has not been read in full by anyone on this side.
+- Our search does not use the paper's round-to-nearest error analysis. It assumes IEEE 754 directed rounding (FE_UPWARD) is carried out correctly by the hardware and honoured by the compiler; both are tested at start-up and asserted on every interval operation. The certified quantities use our own Taylor enclosures of sin and cos (`impl/core/interval.hpp`); the library sin and cos appear only where approximate matrices are built, and every bound taken from those matrices is then computed in interval arithmetic.
 - Arithmetic trust base: our C++ interval code (outward rounding, rounding-mode assertion in every binary) plus the python-flint cross-checks. The fallback stage (5 of 61 batches) uses the pipeline's own interval code, and the separate excluded-cell check samples 1%, not all cells.
 - The binary64 rounding of the rational seed centres is argued, not machine-checked (`coverage/COVERAGE_VERDICT.md`, "Not covered").
 - The paper's own Appendix A conditions (binary64 arithmetic, compiler) apply to OpenAI's run; ours is a different implementation, so we say nothing about their execution archive.
